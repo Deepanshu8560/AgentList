@@ -1,70 +1,143 @@
-# Getting Started with Create React App
+###  AgentList
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A full-stack web application for managing agent information — built with a modern front-end and back-end stack.
 
-## Available Scripts
+### Table of Contents
 
-In the project directory, you can run:
+- About
 
-### `npm start`
+- Key Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Tech Stack
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Getting Started
 
-### `npm test`
+- Prerequisites
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Installation & Setup
 
-### `npm run build`
+- Usage
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Testing
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Project Structure
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Contributing
 
-### `npm run eject`
+### About
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+AgentList is designed to provide an intuitive interface to manage a list of agents with their contact phones and associated notes. The app supports CRUD operations (Create, Read, Update, Delete) on agent records and is built to be scalable and maintainable, making it ideal for small/medium teams tracking agent data and notes.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Key Features
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Agent management: add new agents, view list of agents, update details, delete records
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Phone number storage (numeric format) and free-text notes for each agent
 
-## Learn More
+- Responsive front-end for desktop and mobile usage
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Clean separation of frontend and backend for modular development
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Automated tests to ensure core functionality works correctly
 
-### Code Splitting
+- Tech Stack
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Frontend: JavaScript, HTML, CSS (framework/library if applicable)
 
-### Analyzing the Bundle Size
+- Backend: Node.js (or whichever backend folder reveals)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- Database: MongoDB
 
-### Making a Progressive Web App
+- Languages: JavaScript and Python according to repo stats. 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- Testing: Automated tests (see test_reports and tests folders)
 
-### Advanced Configuration
+### Getting Started
+- Prerequisites
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- Node.js version X.X.X (or newer)
 
-### Deployment
+- npm package manager
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+### Installation & Setup
+
+1. **Clone the repository**
+```bash
+git clone https://github.com/Deepanshu8560/AgentList.git  
+cd AgentList  
+```
+
+2. **Install backend dependencies**
+```bash
+cd backend  
+npm install  
+```
+
+3. **Configure database credentials**
+```bash
+Install frontend dependencies
+
+cd ../frontend  
+npm install  
+```
+
+4. **Run the development server**
+```bash
+# backend  
+cd ../backend && npm start  
+
+# frontend  
+cd ../frontend && npm start  
+```
+
+5. Open your browser and navigate to http://localhost:3000 (or whichever port) to view the app.
+
+### Usage
+
+- Navigate to the Agents page
+
+- Use the Add Agent button to input a first name, phone number, and notes
+
+- View the list of agents, click on an agent to view full details or edit
+- Use Delete to remove an agent record
+
+- Use the search/filter (if implemented) to quickly find an agent by name or note content
+
+### Testing
+
+Automated tests are included to verify key backend endpoints and frontend behaviour.
+```bash
+To run backend tests:
+
+cd backend && npm test  
+```
+
+See test results in the test_reports/ folder.
+
+### Project Structure
+```bash
+AgentList/
+├─ frontend/           # UI code
+├─ backend/            # API and server code
+├─ tests/              # Unit/integration tests
+├─ test_reports/       # Generated test result artifacts
+├─ .emergent           # Configuration for (Emergent?) if applicable
+└─ README.md           # You are here
+```
+### Contributing
+
+- Contributions are welcome! If you’d like to contribute:
+
+- Fork the repository
+
+- Create a feature branch (e.g., feature/your-feature)
+
+- Commit your changes
+- Push the branch and create a Pull Request
+
+Ensure new features are covered by tests and existing tests still pass
+
+Please respect the existing code style and maintain consistency.
