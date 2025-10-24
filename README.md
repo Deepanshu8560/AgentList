@@ -124,7 +124,6 @@ AgentList/
 ├─ backend/            # API and server code
 ├─ tests/              # Unit/integration tests
 ├─ test_reports/       # Generated test result artifacts
-├─ .emergent           # Configuration for (Emergent?) if applicable
 └─ README.md           # You are here
 ```
 ### Contributing
